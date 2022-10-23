@@ -22,4 +22,5 @@ project.
 
 Here are some pretty screenshots:
 
-...
+![Title screen](images/image-1.png)
+
