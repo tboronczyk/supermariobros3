@@ -57,7 +57,8 @@ Video_DoWXMario00:
 	; ----
 
 	vaddr $294C
-	.byte $05, $D8, $F0, $E9, $EC, $EE	; WORLD
+	;            M    O    N    D    O
+	.byte $05, $BA, $F0, $DB, $EE, $F0	; WORLD
 
 	vaddr $29AA
 	.byte $05, $BA, $BC, $E9, $FC, $F0	; MARIO
@@ -402,7 +403,8 @@ Video_DoWXLuigi00:
 	.byte $01, $E5
 
 	vaddr $294C
-	.byte $05, $D8, $F0, $E9, $EC, $EE	; WORLD
+	;            M    O    N    D    O
+	.byte $05, $BA, $F0, $DB, $EE, $F0	; WORLD
 
 	vaddr $29AA
 	.byte $05, $EC, $DA, $FC, $EB, $FC	; LUIGI
