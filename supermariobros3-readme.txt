@@ -11,18 +11,18 @@ La retpaĝo por la projekto estas
 
 PRISKRIBO DE LUDO
 -----------------
-Bowser has sent his 7 children to make mischief as they
-please in the normally peaceful Mushroom World. They
-stole the royal magic wands from each country in the
-Mushroom World and used them to turn their kings into
-animals. Mario and Luigi must recover the royal magic
-wands from Bowser's 7 kids to return the kings to their
-true forms.
+Kupa sendis siajn sep infanojn por petoli laŭvole en
+la kutime paca Funga Mondo. Ili ŝtelis la sorĉbastonon
+de la reĝo en ĉiuj landoj, kaj uzis ilin por transformi
+la reĝojn en bestojn. Mario kaj Luigi devas repreni la
+bastonojn de la kupaidoj kaj retransformi la reĝojn
+al la propraj formoj.
 
-In Super Mario Bros. 3 there are more warps, more chances
-at extra lives, and new special suits. The raccoon suit
-lets you fly and knock out blocks. The frog suit helps you
-out-swim deadly fish. There are suits for every occasion!
+En Super Mario Bros. 3 estas pli da varpado, pli da
+ŝancoj por gajni vivojn, kaj novaj kostumoj. La lavursa
+kostumo donas al la portanto kapablon flugi kaj rompi
+blokojn. La rana kostumo helpas naĝi pli rapide ol
+mortigemaj fiŝoj. Estas kostumo por ĉiu situacio!
 
 INFORMOJ PRI ROM
 ----------------
