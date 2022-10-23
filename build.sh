@@ -14,6 +14,10 @@ cp smb3.nes ../$ROM
 cd ..
 
 echo "Updating CHR..."
+dd if=chr/alpha.bin of="$ROM" conv=notrunc bs=1 seek=$((0x57B10))
+dd if=chr/alpha-jx.bin of="$ROM" conv=notrunc bs=1 seek=$((0x57820))
+dd if=chr/alpha-sx.bin of="$ROM" conv=notrunc bs=1 seek=$((0x57890))
+dd if=chr/alpha-z.bin of="$ROM" conv=notrunc bs=1 seek=$((0x57900))
 dd if=chr/start.bin of="$ROM" conv=notrunc bs=1 seek=$((0x45D10))
 dd if=chr/help.bin of="$ROM" conv=notrunc bs=1 seek=$((0x48290))
 dd if=chr/status-spesmilo.bin of="$ROM" conv=notrunc bs=1 seek=$((0x57ED0))
