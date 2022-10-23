@@ -3884,17 +3884,17 @@ PRG002_B325:
 
 	; English: "Pick a box." / "Its contents" / "will help you" / "on your way"
 ToadMsg_Standard:
-	;            P    i    c    k         a         b    o    x    .
-	.byte $FE, $BF, $D8, $D2, $DA, $FE, $D0, $FE, $D1, $DE, $88, $E9, $FE, $FE, $FE
+	;            E    l    e    k    t    u         k    e    s    t    o    n    .
+	.byte $FE, $B4, $DB, $D4, $DA, $CD, $CE, $FE, $DA, $D4, $CC, $CD, $DE, $DD, $E9
 
-	;            I    t    s         c    o    n    t    e    n    t    s
-	.byte $FE, $B8, $CD, $CC, $FE, $D2, $DE, $DD, $CD, $D4, $DD, $CD, $CC, $FE, $FE
+	;            L    a         e    n    h    a    v    o
+	.byte $FE, $BB, $D0, $FE, $D4, $DD, $D7, $D0, $CF, $DE, $FE, $FE, $FE, $FE, $FE
 
-	;            w    i    l    l         h    e    l    p         y    o    u
-	.byte $FE, $81, $D8, $DB, $DB, $FE, $D7, $D4, $DB, $DF, $FE, $8C, $DE, $CE, $FE
+	;            h    e    l   p     o    s         v    i    n         d    u   m
+	.byte $FE, $D7, $D4, $DB, $DF, $DE, $CC, $FE, $CF, $D8, $DD, $FE, $D3, $CE, $DC
 
-	;            o    n         y    o    u    r         w    a    y    .
-	.byte $FE, $DE, $DD, $FE, $8C, $DE, $CE, $CB, $FE, $81, $D0, $8C, $E9, $FE, $FE
+	;            v    i    a         v    o    j    a   gx    o    .
+	.byte $FE, $CF, $D8, $D0, $FE, $CF, $DE, $D9, $D0, $C7, $DE, $E9, $FE, $FE, $FE
 
 	;
 	.byte $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE
@@ -3904,43 +3904,43 @@ ToadMsg_Standard:
 
 	; English: "One toot on" / "this whistle" / "will send you" / "to a far away" / "land!"
 ToadMsg_WarpWhistle:
-	;       O    n    e         t    o    o    t         o    n
-	.byte $BE, $DD, $D4, $FE, $CD, $DE, $DE, $CD, $FE, $DE, $DD, $FE, $FE, $FE, $FE
+	;            B    l    o    v    i         e    n        cx    i
+	.byte $FE, $B1, $DB, $DE, $CF, $D8, $FE, $D4, $DD, $FE, $C0, $D8, $FE, $FE, $FE
 
-	;       t    h    i    s         w    h    i    s    t    l    e
-	.byte $CD, $D7, $D8, $CC, $FE, $81, $D7, $D8, $CC, $CD, $DB, $D4, $FE, $FE, $FE
+	;            t    i    u    n         f    a    j    f    i    l    o    n
+	.byte $FE, $CD, $D8, $CE, $DD, $FE, $D5, $D0, $D9, $D5, $D8, $DB, $DE, $DD, $FE
 
-	;       w    i    l    l         s    e    n    d         y    o    u
-	.byte $81, $D8, $DB, $DB, $FE, $CC, $D4, $DD, $D3, $FE, $8C, $DE, $CE, $FE, $FE
+	;            t    r    a    n    s    p    o    r    t    o    s
+	.byte $FE, $CD, $CB, $D0, $DD, $CC, $DF, $DE, $CB, $CD, $DE, $CC, $FE, $FE, $FE
 
-	;       t    o         a         f    a    r         a    w    a    y
-	.byte $CD, $DE, $FE, $D0, $FE, $D5, $D0, $CB, $E5, $D0, $81, $D0, $8C, $FE, $FE
+	;            v    i    n         a    l         f    o    r    a
+	.byte $FE, $CF, $D8, $DD, $FE, $D0, $DB, $FE, $D5, $DE, $CB, $D0, $FE, $FE, $FE
 
-	;       l    a    n    d    !
-	.byte $DB, $D0, $DD, $D3, $EA, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE
+	;            l    a    n    d    o    !
+	.byte $FE, $DB, $D0, $DD, $D3, $DE, $EA, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE
 
 	;
 	.byte $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE
 
 	; English: "Hello! You" / "found my shop" / "of strange and" / "wonderful" / "things!"
 ToadMsg_AnchorPWing:
-	;            H    e    l    l    o    !         Y    o    u
-	.byte $FE, $B7, $D4, $DB, $DB, $DE, $EA, $FE, $C8, $DE, $CE, $FE, $FE, $FE, $FE
+	;            S    a    l    u    t    o    n    !         V    i
+	.byte $FE, $C2, $D0, $DB, $CE, $CD, $DE, $DD, $EA, $FE, $C5, $D8, $FE, $FE, $FE
 
-	;            f    o    u    n    d         m    y         s    h    o    p
-	.byte $FE, $D5, $DE, $CE, $DD, $D3, $FE, $DC, $8C, $FE, $CC, $D7, $DE, $DF, $FE
+	;            t    r    o    v    i    s         m    i    a    n
+	.byte $FE, $CD, $CB, $DE, $CF, $D8, $CC, $FE, $DC, $D8, $D0, $DD, $FE, $FE, $FE
 
-	;            o    f         s    t    r    a    n    g    e         a    n    d
-	.byte $FE, $DE, $D5, $FE, $CC, $CD, $CB, $D0, $DD, $D6, $D4, $FE, $D0, $DD, $D3
+	;            v    e    n    d    e    j    o    n         d    e
+	.byte $FE, $CF, $D4, $DD, $D3, $D4, $D9, $DE, $DD, $FE, $D3, $D4, $FE, $FE, $FE
 
-	;            w    o    n    d    e    r    f    u    l
-	.byte $FE, $81, $DE, $DD, $D3, $D4, $CB, $D5, $CE, $DB, $FE, $FE, $FE, $FE, $FE
+	;            s    t    r    a    n    g    a    j         k   a     j
+	.byte $FE, $CC, $CD, $CB, $D0, $DD, $D6, $D0, $D9, $FE, $DA, $D0, $D9, $FE, $FE
 
-	;            t    h    i    n    g    s    !
-	.byte $FE, $CD, $D7, $D8, $DD, $D6, $CC, $EA, $FE, $FE, $FE, $FE, $FE, $FE, $FE
+	;            m    i    r    i    n    d    a    j
+	.byte $FE, $DC, $D8, $CB, $D8, $DD, $D3, $D0, $D9, $FE, $FE, $FE, $FE, $FE, $FE
 
-	;
-	.byte $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE
+	;            v    a    r    o    j    !
+	.byte $FE, $CF, $D0, $CB, $DE, $D9, $EA, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE
 
 	; Pointer table to Toad's three messages
 	; Warp Whistle
