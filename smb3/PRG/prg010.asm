@@ -345,8 +345,8 @@ Video_DoW2WZ:	; "WELCOME TO WARP ZONE" banner
 	vaddr $289B
 	.byte VU_VERT | $04, $A2, $E7, $E7, $E5
 
-	vaddr $28A5	;W    E    L    C    O    M    E         T    O         W    A    R    P         Z    O    N    E
-	.byte 22, $FE, $D8, $E8, $EC, $ED, $F0, $BA, $E8, $FE, $EA, $F0, $FE, $D8, $BC, $E9, $D9, $FE, $FD, $F0, $DB, $E8, $FE
+	vaddr $28A5	;B    O    N    V    E    N    O    N         A    L         V    A    R    P   Z    O    N    O
+	.byte 22, $FE, $D8, $F0, $DB, $6A, $E8, $DB, $F0, $DB, $FE, $BC, $EC, $FE, $6A, $BC, $E9, $D9, $FD, $F0, $DB, $F0, $FE
 
 	vaddr $28C5
 	.byte VU_REPEAT | 22, $FE
