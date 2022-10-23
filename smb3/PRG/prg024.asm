@@ -192,37 +192,38 @@ PRG024_A119:
 
 	; English: "Oh,it's terrible!" / "The King has been" / "transformed!" / "Please find the" / "Magic Wand so we can" / "change him back"
 KingHelpMsg1:
-	;       O    h    ,    i    t    '    s         t    e    r    r    i    b    l    e    !
-	.byte $BE, $D7, $9A, $D8, $CD, $AB, $CC, $FE, $CD, $D4, $CB, $CB, $D8, $D1, $DB, $D4, $EA, $FE, $FE, $FE
+	;            H    o    ,        t    e    r    u    r    e   !
+	.byte $FE, $B7, $DE, $9A, $FE, $CD, $D4, $CB, $CE, $CB, $D4, $EA, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE
 
-	;       T    h    e         K    i    n    g         h    a    s         b    e    e    n
-	.byte $C3, $D7, $D4, $FE, $BA, $D8, $DD, $D6, $FE, $D7, $D0, $CC, $FE, $D1, $D4, $D4, $DD, $FE, $FE, $FE
+	;            L    a         r    e   gx    o         e    s    t    a   s
+	.byte $FE, $BB, $D0, $FE, $CB, $D4, $C7, $DE, $FE, $D4, $CC, $CD, $D0, $CC, $FE, $FE, $FE, $FE, $FE, $FE
 
-	;       t    r    a    n    s    f    o    r    m    e    d    !
-	.byte $CD, $CB, $D0, $DD, $CC, $D5, $DE, $CB, $DC, $D4, $D3, $EA, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE
+	;            t    r    a    n    s    f    o    r    m    i    t    a    !
+	.byte $FE, $CD, $CB, $D0, $DD, $CC, $D5, $DE, $CB, $DC, $D8, $CD, $D0, $EA, $FE, $FE, $FE, $FE, $FE, $FE
 
-	;       P    l    e    a    s    e         f    i    n    d         t    h    e
-	.byte $BF, $DB, $D4, $D0, $CC, $D4, $FE, $D5, $D8, $DD, $D3, $FE, $CD, $D7, $D4, $FE, $FE, $FE, $FE, $FE
+	;            B    o    n    v    o    l    u         r    e    p    r    e    n    i         l   a
+	.byte $FE, $B1, $DE, $DD, $CF, $DE, $DB, $CE, $FE, $CB, $D4, $DF, $CB, $D4, $DD, $D8, $FE, $DB, $D0, $FE
 
-	;       M    a    g    i    c         W    a    n    d         s    o         w    e         c    a    n
-	.byte $BC, $D0, $D6, $D8, $D2, $FE, $C6, $D0, $DD, $D3, $FE, $CC, $DE, $FE, $81, $D4, $FE, $D2, $D0, $DD
+	;            s    o    r   cx    b    a    s    t    o    n    o    n         p    o    r
+	.byte $FE, $CC, $DE, $CB, $C0, $D1, $D0, $CC, $CD, $DE, $DD, $DE, $DD, $FE, $DF, $DE, $CB, $FE, $FE, $FE
 
-	;       c    h    a    n    g    e         h    i    m         b    a    c    k    .
-	.byte $D2, $D7, $D0, $DD, $D6, $D4, $FE, $D7, $D8, $DC, $FE, $D1, $D0, $D2, $DA, $E9, $FE, $FE, $FE, $FE
+	;            s    a    v    i         l     i    n   !
+	.byte $FE, $CC, $D0, $CF, $D8, $FE, $DB, $D8, $DD, $EA, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE
+
 
 	; English: "Hurry! Hurry!" / "Get the Magic Wand" / "back from Little" / "Koopa."
 KingHelpMsg2:
-	;       H    u    r    r    y    !         H    u    r    r    y    !
-	.byte $B7, $CE, $CB, $CB, $8C, $EA, $FE, $B7, $CE, $CB, $CB, $8C, $EA, $FE, $FE, $FE, $FE, $FE, $FE, $FE
+	;            R    a    p    i    d    e    !         R    a    p    i    d    e    !
+	.byte $FE, $C1, $D0, $DF, $D8, $D3, $D4, $EA, $FE, $C1, $D0, $DF, $D8, $D3, $D4, $EA, $FE, $FE, $FE, $FE
 
-	;       G    e    t         t    h    e         M    a    g    i    c         W    a    n    d
-	.byte $B6, $D4, $CD, $FE, $CD, $D7, $D4, $FE, $BC, $D0, $D6, $D8, $D2, $FE, $C6, $D0, $DD, $D3, $FE, $FE
+	;            R    e    p    r    e    n    u         l    a
+	.byte $FE, $C1, $D4, $DF, $CB, $D4, $DD, $CE, $FE, $DB, $D0, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE
 
-	;       b    a    c    k         f    r    o    m         L    i    t    t    l    e
-	.byte $D1, $D0, $D2, $DA, $FE, $D5, $CB, $DE, $DC, $FE, $BB, $D8, $CD, $CD, $DB, $D4, $FE, $FE, $FE, $FE
+	;            s    o    r    ĉ    b    a    s    t    o    n    o    n         d    e         l    a
+	.byte $FE, $CC, $DE, $CB, $C0, $D1, $D0, $CC, $CD, $DE, $DD, $DE, $DD, $FE, $D3, $D4, $FE, $DB, $D0, $FE
 
-	;       K    o    o    p    a    .
-	.byte $BA, $DE, $DE, $DF, $D0, $E9, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE
+	;            i    n    f    a    n    a         K    u    p    a    .
+	.byte $FE, $D8, $DD, $D5, $D0, $DD, $D0, $FE, $BA, $CE, $DF, $D0, $E9, $FE, $FE, $FE, $FE, $FE, $FE, $FE
 
 	;
 	.byte $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE
