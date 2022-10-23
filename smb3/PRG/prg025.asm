@@ -676,12 +676,14 @@ Title_LoadMenu:
 	; 1 PLAYER GAME
 	vaddr $226A
 	.byte 13	; 13 bytes to follow
-	.byte $0E, $5C, $0A, $0B, $0C, $1A, $1B, $0D, $5C, $1C, $0C, $1D, $1B
+	;       1         L    U    D    A    N    T    O
+	.byte $0E, $5C, $0B, $0D, $0A, $0C, $1B, $1A, $1C, $5C, $5C, $5C, $5C
 
 	; 2 PLAYER GAME
 	vaddr $22AA
 	.byte 13	; 13 bytes to follow
-	.byte $1E, $5C, $0A, $0B, $0C, $1A, $1B, $0D, $5C, $1C, $0C, $1D, $1B
+	;       2         L    U    D    A    N    T    O    J
+	.byte $1E, $5C, $0B, $0D, $0A, $0C, $1B, $1A, $1C, $1D, $5C, $5C, $5C
 
 	; C 1988 Nintendo
 	vaddr $22EA

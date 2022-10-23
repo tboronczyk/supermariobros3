@@ -14,7 +14,12 @@ cp smb3.nes ../$ROM
 cd ..
 
 echo "Updating CHR..."
-#...
+dd if=chr/title-d.bin of="$ROM" conv=notrunc bs=1 seek=$((0x5E0B0))
+dd if=chr/title-u.bin of="$ROM" conv=notrunc bs=1 seek=$((0x5E0E0))
+dd if=chr/title-t.bin of="$ROM" conv=notrunc bs=1 seek=$((0x5E1B0))
+dd if=chr/title-n.bin of="$ROM" conv=notrunc bs=1 seek=$((0x5E1C0))
+dd if=chr/title-o.bin of="$ROM" conv=notrunc bs=1 seek=$((0x5E1D0))
+dd if=chr/title-j.bin of="$ROM" conv=notrunc bs=1 seek=$((0x5E1E0))
 
 echo "Generating patch..."
 $FLIPS -c -i "$ORIG" "$ROM" "$IPS"
