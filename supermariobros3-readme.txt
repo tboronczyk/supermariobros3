@@ -42,5 +42,8 @@ KONTRIBUANTOJ
 Timoteo BORONCZYK/bluephoenix
  - Tradukado, programado
 
+Zerbie HYNSON/Terpomo11
+ - Traduka konsultisto
+
 Specialajn dankojn al captainsouthbird por la projekto SMB3
 Disassembly (https://github.com/captainsouthbird/smb3)
