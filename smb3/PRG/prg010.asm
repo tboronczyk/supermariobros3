@@ -216,13 +216,13 @@ Video_DoGameOver00:
 	; ----
 
 	vaddr $296B
-	.byte $0A, $EB, $BC, $BA, $E8, $FE, $F0, $6A, $E8, $E9, $6B	; GAME OVER!
+	.byte $0A, $FE, $EC, $DA, $EE, $EA, $FC, $DB, $F0, $6B, $FE	; LUDFINO!
 
 	vaddr $29AF
-	.byte $08, $ED, $F0, $DB, $EA, $FC, $DB, $DA, $E8	; CONTINUE
+	.byte $07, $EE, $BC, $ED, $E9, $FC, $EB, $FC	; DAUXRIGI
 
 	vaddr $29CF
-	.byte $03, $E8, $DB, $EE	; END
+	.byte $04, $EA, $FC, $DB, $FC	; FINI
 
 	; ----
 

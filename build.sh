@@ -31,6 +31,8 @@ dd if=chr/title-n.bin of="$ROM" conv=notrunc bs=1 seek=$((0x5E1C0))
 dd if=chr/title-o.bin of="$ROM" conv=notrunc bs=1 seek=$((0x5E1D0))
 dd if=chr/title-j.bin of="$ROM" conv=notrunc bs=1 seek=$((0x5E1E0))
 dd if=chr/info-b.bin of="$ROM" conv=notrunc bs=1 seek=$((0x45D90))
+dd if=chr/info-f.bin of="$ROM" conv=notrunc bs=1 seek=$((0x45EB0))
+dd if=chr/info-ux.bin of="$ROM" conv=notrunc bs=1 seek=$((0x45EE0))
 
 echo "Generating patch..."
 $FLIPS -c -i "$ORIG" "$ROM" "$IPS"
