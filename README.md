@@ -24,3 +24,5 @@ Here are some pretty screenshots:
 
 ![Title screen](images/image-1.png)
 
+![World 1 map](images/image-2.png)
+
