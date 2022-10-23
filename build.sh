@@ -15,6 +15,7 @@ cd ..
 
 echo "Updating CHR..."
 dd if=chr/start.bin of="$ROM" conv=notrunc bs=1 seek=$((0x45D10))
+dd if=chr/help.bin of="$ROM" conv=notrunc bs=1 seek=$((0x48290))
 dd if=chr/status-spesmilo.bin of="$ROM" conv=notrunc bs=1 seek=$((0x57ED0))
 dd if=chr/status-world.bin of="$ROM" conv=notrunc bs=1 seek=$((0x57710))
 dd if=chr/title-d.bin of="$ROM" conv=notrunc bs=1 seek=$((0x5E0B0))
