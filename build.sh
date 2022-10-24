@@ -35,6 +35,9 @@ dd if=chr/help.bin of="$ROM" conv=notrunc bs=1 seek=$((0x48290))
 dd if=chr/status-spesmilo.bin of="$ROM" conv=notrunc bs=1 seek=$((0x57ED0))
 dd if=chr/status-world.bin of="$ROM" conv=notrunc bs=1 seek=$((0x57710))
 
+dd if=chr/1up-1.bin of="$ROM" conv=notrunc bs=1 seek=$((0x41220))
+dd if=chr/1up-2.bin of="$ROM" conv=notrunc bs=1 seek=$((0x41300))
+
 dd if=chr/minigame-5up.bin of="$ROM" conv=notrunc bs=1 seek=$((0x41650))
 dd if=chr/minigame-23up.bin of="$ROM" conv=notrunc bs=1 seek=$((0x41710))
 dd if=chr/minigame-1up.bin of="$ROM" conv=notrunc bs=1 seek=$((0x41F30))
