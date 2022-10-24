@@ -429,7 +429,7 @@ PAUSE_Sprites:
 	.byte $58, $F9, $03, $70	; UX
 	.byte $58, $FD, $03, $80	; Z
 	.byte $58, $FF, $03, $90	; I
-	.byte $58, $E1, $03, $A0	; T
+	.byte $58, $DD, $03, $A0	; T
 	.byte $58, $F5, $03, $B0	; A
 PAUSE_Sprites_End
 
