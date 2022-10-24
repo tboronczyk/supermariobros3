@@ -26,3 +26,8 @@ Here are some pretty screenshots:
 
 ![World 1 map](images/image-2.png)
 
+![Toad's house](images/image-3.png)
+
+![The King has been transformed](images/image-4.png)
+
+![Letter from the Princess](images/image-5.png)
