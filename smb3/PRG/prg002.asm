@@ -5802,7 +5802,7 @@ PRG002_BD3E:
 	RTS		 ; Return
 
 XUp_Patterns:	.byte $00, $EB, $ED		; xUP (the first byte is unused since it must be supplied by how many lives)
-XUp_XOff:	.byte $74, $7C, $84		; X offset
+XUp_XOff:	.byte $7F, $77, $87		; X offset
 XUp_NumPats:	.byte $B3, $B5, $B7, $B1	; Pattern for 2, 3, 5, 1
 
 EndLevelCard_Exit:
