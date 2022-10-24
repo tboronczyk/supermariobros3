@@ -118,8 +118,8 @@ PRG009_A08F:
 	RTS		 ; Return
 
 
-Vs_xUpPattern_L:	.byte $F3, $71, $73, $FF, $65	; 1, 2, 3, INVALID, 5 lives
-Vs_xUpPattern_R:	.byte $FF, $67, $67, $FF, $67	; 1, 2, 3, INVALID, 5 lives
+Vs_xUpPattern_L:	.byte $67, $67, $67, $FF, $67	; 1, 2, 3, INVALID, 5 lives
+Vs_xUpPattern_R:	.byte $F3, $71, $73, $FF, $65	; 1, 2, 3, INVALID, 5 lives
 
 Vs_xUp_SprRAMOff:	.byte $B0, $B8	; Sprite RAM offset for the "x Up"
 	
