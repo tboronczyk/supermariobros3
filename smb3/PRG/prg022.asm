@@ -1679,14 +1679,14 @@ BonusGame_UNUSED0_Text:
 	; Spade Instruction
 	; English: "Line up the pictures and" / "get a prize!" / "You only get one try."
 BonusGame_Spade_Text:
-	;       L    i    n    e         u    p         t    h    e         p    i    c    t    u    r    e    s         a    n    d
-	.byte $BB, $D8, $DD, $D4, $FE, $CE, $DF, $FE, $CD, $D7, $D4, $FE, $DF, $D8, $D2, $CD, $CE, $CB, $D4, $CC, $FE, $D0, $DD, $D3, $00
+	;       F    a    r    u         k    o    m    p    l    e    t    a    n         b    i    l    d    o    n
+	.byte $B5, $D0, $CB, $CE, $FE, $DA, $DE, $DC, $DF, $DB, $D4, $CD, $D0, $DD, $FE, $D1, $D8, $DB, $D3, $DE, $DD, $00
 
-	;       g    e    t         a         p    r    i    z    e    !
-	.byte $D6, $D4, $CD, $FE, $D0, $FE, $DF, $CB, $D8, $8F, $D4, $EA, $00
+	;       p    o    r         g    a    j    n    i    !         V    i         p    o    v    a    s
+	.byte $DF, $DE, $CB, $FE, $D6, $D0, $D9, $DD, $D8, $EA, $FE, $C5, $D8, $FE, $DF, $DE, $CF, $D0, $CC, $00
 
-	;       Y    o    u         o    n    l    y         g    e    t         o    n    e         t    r    y    .
-	.byte $C8, $DE, $CE, $FE, $DE, $DD, $DB, $8C, $FE, $D6, $D4, $CD, $FE, $DE, $DD, $D4, $FE, $CD, $CB, $8C, $E9
+	;       l    u    d    i         n    u    r         u    n    u    f    o    j    e    .
+	.byte $DB, $CE, $D3, $D8, $FE, $DD, $CE, $CB, $FE, $CE, $DD, $CE, $D5, $DE, $D9, $D4, $E9, $00
 
 	; (Terminator, value into Bonus_Round2)
 	.byte $FF, BONUS_SPADE
@@ -1694,14 +1694,14 @@ BonusGame_Spade_Text:
 	; N-Spade Instruction
 	; English: "Flip over any two cards" / "and see if they match." / "You can only miss twice!"
 BonusGame_NSpade_Text:
-	;       F    l    i    p         o    v    e    r         a    n    y         t    w    o         c    a    r    d    s
-	.byte $B5, $DB, $D8, $DF, $FE, $DE, $CF, $D4, $CB, $FE, $D0, $DD, $8C, $FE, $CD, $81, $DE, $FE, $D2, $D0, $CB, $D3, $CC, $00
+	;       R    e    n    v    e    r    s    u         d    u         k    a    r    t    o    j    n         p    o    r
+	.byte $C1, $D4, $DD, $CF, $D4, $CB, $CC, $CE, $FE, $D3, $CE, $FE, $DA, $D0, $CB, $CD, $DE, $D9, $DD, $FE, $DF, $DE, $CB, $00
 
-	;       a    n    d         s    e    e         i    f         t    h    e    y         m    a    t    c    h    .
-	.byte $D0, $DD, $D3, $FE, $CC, $D4, $D4, $FE, $D8, $D5, $FE, $CD, $D7, $D4, $8C, $FE, $DC, $D0, $CD, $D2, $D7, $E9, $00
+	;       t    r    o    v    i         p    a    r    o    n    .         N    u    r         d    u
+	.byte $CD, $CB, $DE, $CF, $D8, $FE, $DF, $D0, $CB, $DE, $DD, $E9, $FE, $BD, $CE, $CB, $FE, $D3, $CE, $00
 
-	;       Y    o    u         c    a    n         o    n    l    y         m    i    s    s         t    w    i    c    e    !
-	.byte $C8, $DE, $CE, $FE, $D2, $D0, $DD, $FE, $DE, $DD, $DB, $8C, $FE, $DC, $D8, $CC, $CC, $FE, $CD, $81, $D8, $D2, $D4, $EA
+	;       m    i    s    o    j    !
+	.byte $DC, $D8, $CC, $DE, $D9, $EA, $00
 
 	; (Terminator, value into Bonus_Round2)
 	.byte $FF, BONUS_NSPADE
