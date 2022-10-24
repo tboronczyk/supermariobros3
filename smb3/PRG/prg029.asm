@@ -2116,17 +2116,17 @@ PRG029_D702:
 
 	; Patterns for TIME-UP
 TIMEUP_Sprites:
-	.byte $21	; T
-	.byte $23	; I
-	.byte $25	; M
-	.byte $27	; E
-	.byte $29	; -
-	.byte $1D	; U
-	.byte $1F	; P
+        .byte $1D       ; T
+        .byte $1F       ; E
+        .byte $21       ; M
+        .byte $23       ; P
+        .byte $25       ; O
+        .byte $27       ;
+        .byte $29       ;
 
-	; X positions for each letter in TIME-UP
+        ; X positions for each letter in TIME-UP
 TIMEUP_SpriteXs:
-	.byte $60, $68, $70, $78, $80, $88, $90
+        .byte $60, $68, $70, $78, $80, $88, $90
 
 Player_Die_TimeUp:
 	LDA Player_AboveTop

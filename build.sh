@@ -44,6 +44,7 @@ dd if=chr/status-world.bin of="$ROM" conv=notrunc bs=1 seek=$((0x57710))
 dd if=chr/1up-1.bin of="$ROM" conv=notrunc bs=1 seek=$((0x41220))
 dd if=chr/1up-2.bin of="$ROM" conv=notrunc bs=1 seek=$((0x41300))
 dd if=chr/clear-1up.bin of="$ROM" conv=notrunc bs=1 seek=$((0x4CAB0))
+dd if=chr/timeup.bin of="$ROM" conv=notrunc bs=1 seek=$((0x4C9D0))
 
 dd if=chr/minigame-5up.bin of="$ROM" conv=notrunc bs=1 seek=$((0x41650))
 dd if=chr/minigame-23up.bin of="$ROM" conv=notrunc bs=1 seek=$((0x41710))
