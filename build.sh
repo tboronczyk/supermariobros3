@@ -53,6 +53,7 @@ dd if=chr/minigame-1up.bin of="$ROM" conv=notrunc bs=1 seek=$((0x41F30))
 dd if=chr/pow-1.bin of="$ROM" conv=notrunc bs=1 seek=$((0x41890))
 dd if=chr/pow-2.bin of="$ROM" conv=notrunc bs=1 seek=$((0x41990))
 dd if=chr/pow-3.bin of="$ROM" conv=notrunc bs=1 seek=$((0x41B90))
+dd if=chr/nspade-1up.bin of="$ROM" conv=notrunc bs=1 seek=$((0x57790))
 
 echo "Generating patch..."
 $FLIPS -c -i "$ORIG" "$ROM" "$IPS"
