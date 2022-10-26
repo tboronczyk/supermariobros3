@@ -3884,17 +3884,17 @@ PRG002_B325:
 
 	; English: "Pick a box." / "Its contents" / "will help you" / "on your way"
 ToadMsg_Standard:
-	;            E    l    e    k    t    u         k    e    s    t    o    n    .
-	.byte $FE, $B4, $DB, $D4, $DA, $CD, $CE, $FE, $DA, $D4, $CC, $CD, $DE, $DD, $E9
+	;       E    l    e    k    t    u         k    e    s    t    o    n    .
+	.byte $B4, $DB, $D4, $DA, $CD, $CE, $FE, $DA, $D4, $CC, $CD, $DE, $DD, $E9, $FE
 
-	;            L    a         e    n    h    a    v    o
-	.byte $FE, $BB, $D0, $FE, $D4, $DD, $D7, $D0, $CF, $DE, $FE, $FE, $FE, $FE, $FE
+	;       L    a         e    n    h    a    v    o
+	.byte $BB, $D0, $FE, $D4, $DD, $D7, $D0, $CF, $DE, $FE, $FE, $FE, $FE, $FE, $FE
 
-	;            h    e    l   p     o    s         v    i    n         d    u   m
-	.byte $FE, $D7, $D4, $DB, $DF, $DE, $CC, $FE, $CF, $D8, $DD, $FE, $D3, $CE, $DC
+	;       h    e    l   p     o    s         v    i    n         d    u   m
+	.byte $D7, $D4, $DB, $DF, $DE, $CC, $FE, $CF, $D8, $DD, $FE, $D3, $CE, $DC, $FE
 
-	;            v    i    a         v    o    j    a   gx    o    .
-	.byte $FE, $CF, $D8, $D0, $FE, $CF, $DE, $D9, $D0, $C7, $DE, $E9, $FE, $FE, $FE
+	;       v    i    a         v    o    j    a   gx    o    .
+	.byte $CF, $D8, $D0, $FE, $CF, $DE, $D9, $D0, $C7, $DE, $E9, $FE, $FE, $FE, $FE
 
 	;
 	.byte $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE
