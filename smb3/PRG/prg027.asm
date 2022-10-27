@@ -1237,26 +1237,26 @@ Letter_World6:
 Letter_World7:
 	; "I kidnapped the" / "Princess while you" / "were running around." / "She's here in my" / "castle,if you dare" / "to try and rescue" / "    her."
 
-	;       I         k    i    d    n    a    p    p    e    d         t    h    e
-	.byte $B8, $FE, $DA, $D8, $D3, $DD, $D0, $DF, $DF, $D4, $D3, $FE, $CD, $D7, $D4, $00
+	;       M    i         f    o    r    k    a    p    t    i    s         l    a
+	.byte $BC, $D8, $FE, $D5, $DE, $CB, $DA, $D0, $DF, $CD, $D8, $CC, $FE, $DB, $D0, $00
 
-	;       P    r    i    n    c    e    s    s         w    h    i    l    e         y    o    u
-	.byte $DF, $CB, $D8, $DD, $D2, $D4, $CC, $CC, $FE, $81, $D7, $D8, $DB, $D4, $FE, $8C, $DE, $CE, $00
+	;       P    r    i    n    c    i    n    o    n         d    u    m         v    i
+	.byte $DF, $CB, $D8, $DD, $D2, $D8, $DD, $DE, $DD, $FE, $D3, $CE, $DC, $FE, $CF, $D8, $00
 
-	;       w    e    r    e         r    u    n    n    i    n    g         a    r    o    u    n    d    .
-	.byte $81, $D4, $CB, $D4, $FE, $CB, $CE, $DD, $DD, $D8, $DD, $D6, $FE, $D0, $CB, $DE, $CE, $DD, $D3, $E9, $00
+	;       m    a    l   sx    p    a    r    i    s         t    e    m    p    o    n    . 
+	.byte $DC, $D0, $DB, $88, $DF, $D0, $CB, $D8, $CC, $FE, $CD, $D4, $DC, $DF, $DE, $DD, $E9, $00
 
-	;       S    h    e    '    s         h    e    r    e         i    n         m    y
-	.byte $C2, $D7, $D4, $AB, $CC, $FE, $D7, $D4, $CB, $D4, $FE, $D8, $DD, $FE, $DC, $8C, $00
+	;      Sx    i         e    s    t    a    s         e    n         m    i    a
+	.byte $88, $D8, $FE, $D4, $CC, $CD, $D0, $CC, $FE, $D4, $DD, $FE, $DC, $D8, $D0, $00
 
-	;       c    a    s    t    l    e    ,    i    f         y    o    u         d    a    r    e
-	.byte $D2, $D0, $CC, $CD, $DB, $D4, $9A, $D8, $D5, $FE, $8C, $DE, $CE, $FE, $D3, $D0, $CB, $D4, $00
+	;       k    a    s    t    e    l    o    ,         s    e         v    i         
+	.byte $DA, $D0, $CC, $CD, $D4, $DB, $DE, $9A, $FE, $CC, $D4, $FE, $CF, $D8, $00
 
-	;       t    o         t    r    y         a    n    d         r    e    s    c    u    e
-	.byte $CD, $DE, $FE, $CD, $CB, $8C, $FE, $D0, $DD, $D3, $FE, $CB, $D4, $CC, $D2, $CE, $D4, $00
+	;       a   ux    d    a    c    o    s         p    r    o    v    i         s    a    v    i
+	.byte $D0, $C6, $D3, $D0, $D2, $DE, $CC, $FE, $DF, $CB, $DE, $CF, $D8, $FE, $CC, $D0, $CF, $D8, $00
 
-	;                           h    e    r    .
-	.byte $FE, $FE, $FE, $FE, $D7, $D4, $CB, $E9, $FF
+	;      sx    i    n    .
+	.byte $88, $D8, $DD, $E9, $FF
 
 
 LetterRow_VRAM_L:	.byte $4A, $2A, $06, $E6, $C6, $A6, $86, $66, $46
@@ -1280,8 +1280,8 @@ Letter_Header:
 
 Letter_HeaderBowser:
 	; Greeting ("Yo!")
-	;       Y    o    !
-	.byte $C8, $DE, $EA, $00
+	;       H    e    j    !
+	.byte $B7, $D4, $D9, $EA, $00
 
 	; Closing ("Ha ha ha...")
 	;       H    a         h    a         h    a    .    .    .
@@ -1291,8 +1291,8 @@ Letter_HeaderBowser:
 	.byte $00
 
 	; Signature bottom row ("King of the Koopa")
-	;       K    i    n    g         o    f         t    h    e         K    o    o    p    a
-	.byte $BA, $D8, $DD, $D6, $FE, $DE, $D5, $FE, $CD, $D7, $D4, $FE, $BA, $DE, $DE, $DF, $D0, $FF
+	;                      R    e   gx    o         K    u    p    a
+	.byte $FE, $FE, $FE, $C1, $D4, $C7, $DE, $FE, $BA, $CE, $DF, $D0, $FF
 
 	; Letter header offset by world
 Letter_HeaderOffset:
