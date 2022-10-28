@@ -1,5 +1,5 @@
 Super Mario Bros. 3 (NES)
-Traduko al Esperanto 
+Traduko al Esperanto (28/10/2022)
 
 ENKONDUKO
 ---------
@@ -35,7 +35,8 @@ povas esti pirateco.
 
 HISTORIO
 --------
-...
+v1.0    28/10/2022
+ - Unua eldono
 
 KONTRIBUANTOJ
 -------------
