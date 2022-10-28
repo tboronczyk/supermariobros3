@@ -3260,11 +3260,11 @@ Roulette_DrawXUpReward:
 
 	; Set sprite 1 X
 	LDA #$70
-	STA Sprite_RAM+$F3
+	STA Sprite_RAM+$F7
 
 	; Set sprite 2 X
 	LDA #$7c
-	STA Sprite_RAM+$F7
+	STA Sprite_RAM+$F3
 
 	; Set sprite 3 X
 	LDA #$84
