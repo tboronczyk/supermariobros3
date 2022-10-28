@@ -36,6 +36,8 @@ dd if=chr/clear-alpha-3.bin of="$ROM" conv=notrunc bs=1 seek=$((0x578A0))
 dd if=chr/clear-alpha-4.bin of="$ROM" conv=notrunc bs=1 seek=$((0x578E0))
 dd if=chr/clear-alpha-5.bin of="$ROM" conv=notrunc bs=1 seek=$((0x579C0))
 dd if=chr/clear-alpha-6.bin of="$ROM" conv=notrunc bs=1 seek=$((0x57AC0))
+dd if=chr/end-accent.bin of="$ROM" conv=notrunc bs=1 seek=$((0x5DFE0))
+dd if=chr/end-hyphen.bin of="$ROM" conv=notrunc bs=1 seek=$((0x5DFF0))
 
 dd if=chr/start.bin of="$ROM" conv=notrunc bs=1 seek=$((0x45D10))
 dd if=chr/help.bin of="$ROM" conv=notrunc bs=1 seek=$((0x48290))

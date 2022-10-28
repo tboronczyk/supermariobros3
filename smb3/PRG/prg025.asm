@@ -212,7 +212,7 @@ EndPic_World8:
 
 	; Split address, parallel tables for the starting VRAM address of the end picture for each world
 EndPic_VRAMStart_H:	.byte $28, $28, $28, $29, $29, $28, $28, $28	; High
-EndPic_VRAMStart_L:	.byte $E3, $AD, $E9, $67, $23, $AD, $A3, $A9	; Low
+EndPic_VRAMStart_L:	.byte $E3, $AD, $E9, $63, $23, $AD, $A3, $AD	; Low
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; This table contains commands for Video_Misc_Updates2 which tells
@@ -818,9 +818,23 @@ EndSeq_WorldFadeIn4:
 	.byte $00
 
 PRG025_CD82:
-	.byte $28, $F4, $07, $DE, $F4, $EF, $F1, $E3 ; $CD7A - $CD89
-	.byte $5C, $77, $29, $74, $0A, $E8, $EF, $E0, $F8, $F8, $5C, $F1, $E0, $F3, $E3, $2A ; $CD8A - $CD99
-	.byte $5C, $04, $D0, $D1, $D2, $D3, $2A, $7C, $82, $D4, $D6, $00
+	.byte $28, $F5
+	.byte $07
+	;       M    O    N    D    O         1
+	.byte $F2, $F4, $F3, $E3, $F4, $5C, $77	; "MONDO 1"
+
+	.byte $29, $56
+	.byte $05
+	;       V    E    R    D    A
+	.byte $FB, $E4, $EF, $E3, $E0	; "VERDA"
+
+	.byte $29, $96
+	.byte $05
+	;       L    A    N    D    O
+	.byte $F1, $E0, $F3, $E3, $F4	; "LANDO"
+
+
+	.byte $2A, $5C, $04, $D0, $D1, $D2, $D3, $2A, $7C, $82, $D4, $D6, $00
 
 PRG025_CDA6:
 	.byte $2A, $7F, $85, $D5 ; $CD9A - $CDA9
@@ -836,9 +850,22 @@ PRG025_CDD1:
 	.byte $04, $55, $55, $7F, $BB, $2B, $E1, $04, $A5, $A5, $AF, $AB, $00
 
 PRG025_CDE7:
-	.byte $28, $E3, $07 ; $CDDA - $CDE9
-	.byte $DE, $F4, $EF, $F1, $E3, $5C, $78, $29, $24, $06, $E3, $E4, $F8, $E4, $EF, $F9 ; $CDEA - $CDF9
-	.byte $29, $67, $04, $F1, $E0, $F3, $E3, $00
+	.byte $28, $E3
+	.byte $07
+	;       M    O    N    D    O         2
+	.byte $F2, $F4, $F3, $E3, $F4, $5C, $78	; "MONDO 2"
+
+	.byte  $29, $43
+	.byte $07
+	;       D    E    Z    E    R    T    A
+	.byte $E3, $E4, $FF, $E4, $EF, $F9, $E0	; "DEZERTA"
+
+	.byte $29, $84
+	.byte $05
+	;       L    A    N    D    O
+	.byte $F1, $E0, $F3, $E3, $F4		; "LANDO"
+
+	.byte $00
 
 PRG025_CE02:
 	.byte $2A, $65, $01, $58, $2A, $82, $05, $58 ; $CDFA - $CE09
@@ -854,8 +881,16 @@ PRG025_CE2D:
 	.byte $55, $2B, $DB, $04, $66, $55, $55, $55, $00
 
 PRG025_CE43:
-	.byte $29, $A2, $05, $DE, $F4, $EF, $F1 ; $CE3A - $CE49
-	.byte $E3, $29, $E4, $01, $79, $2A, $9A, $04, $CA, $CB, $CC, $CD, $00
+	.byte $29, $A2
+	.byte $05
+	;       M    O    N    D    O
+	.byte $F2, $F4, $F3, $E3, $F4	; "MONDO"
+
+	.byte $29, $E4
+	.byte $01
+	.byte $79			; "3"
+
+	.byte $2A, $9A, $04, $CA, $CB, $CC, $CD, $00
 
 PRG025_CE57:
 	.byte $2A, $BA, $04 ; $CE4A - $CE59
@@ -863,7 +898,10 @@ PRG025_CE57:
 	.byte $5C, $DF, $00
 
 PRG025_CE6D:
-	.byte $2A, $89, $0A, $DE, $E0, $F9, $E4, $EF, $5C, $F1, $E0, $F3, $E3 ; $CE6A - $CE79
+	.byte $2A, $8C
+        .byte $0A
+	;       M    A    R    A         L    A    N    D    O
+	.byte $F2, $E0, $EF, $E0, $5C, $F1, $E0, $F3, $E3, $F4 ; "MARA LANDO"
 	.byte $00
 
 PRG025_CE7B:
@@ -871,23 +909,52 @@ PRG025_CE7B:
 	.byte $E2, $04, $AE, $AF, $AF, $AF, $00
 
 PRG025_CE91:
-	.byte $29, $78, $05, $DE, $F4, $EF, $F1, $E3, $29 ; $CE8A - $CE99
-	.byte $BA, $01, $7A, $00
+	.byte $29, $76
+	.byte $05
+	;       M    O    N    D    O
+	.byte $F2, $F4, $F3, $E3, $F4	; "MONDO"
+
+	.byte $29, $B8
+	.byte $01
+	.byte $7A			; "4"
+
+	.byte $00
 
 PRG025_CE9E:
-	.byte $2A, $19, $05, $E8, $EA, $E0, $F3, $F9, $2A, $59, $04, $F1 ; $CE9A - $CEA9
-	.byte $E0, $F3, $E3, $00
+	.byte $2A, $15
+	.byte $07
+	;       G    I    G    A    N    T    A
+	.byte $E8, $EA, $E8, $E0, $F3, $F9, $E0	; "GIGANTA"
+
+	.byte $2A, $56
+	.byte $05
+	;       L    A    N    D    O
+	.byte $F1, $E0, $F3, $E3, $F4 	; "LANDO"
+
+	.byte $00
 
 PRG025_CEAE:
-	.byte $2B, $DA, $04, $FF, $FF, $FF, $BB, $00
+	.byte $2B, $D9, $04, $FF, $FF, $FF, $BB, $00
 
 PRG025_CEB6:
-	.byte $2B, $E2, $04, $FF ; $CEAA - $CEB9
-	.byte $FF, $FF, $BB, $2B, $EA, $04, $AF, $AF, $AF, $AB, $00
+	.byte $2B, $E1, $04, $FF ; $CEAA - $CEB9
+	.byte $FF, $FF, $BB, $2B, $E9, $04, $AF, $AF, $AF, $AB, $00
 
 PRG025_CEC5:
-	.byte $28, $F6, $07, $DE, $F4 ; $CEBA - $CEC9
-	.byte $EF, $F1, $E3, $5C, $7B, $29, $36, $08, $F8, $F0, $FE, $5C, $F1, $E0, $F3, $E3 ; $CECA - $CED9
+	.byte $29, $17
+	.byte $05
+	;      CX    I    E    L    A
+	.byte $E2, $EA, $E4, $F1, $E0 ; "CXIELA"
+
+	.byte $28, $F7
+	.byte $01
+	.byte $FD	; "^ accent"
+
+	.byte $29, $57
+	.byte $05
+	;       L    A    N    D    O
+	.byte $F1, $E0, $F3, $E3, $F4	; "LANDO"
+
 	.byte $28, $D0, $04, $C0, $C1, $C2, $C3, $00
 
 PRG025_CEE2:
@@ -896,15 +963,28 @@ PRG025_CEE2:
 	.byte $D0, $D1, $D2, $D3, $00
 
 PRG025_CEFF:
-	.byte $28, $F6, $07, $DE, $F4, $EF, $F1, $E3, $5C, $7B, $00 ; $CEFA - $CF09
+	.byte $28, $B6
+	.byte $07
+	;       M    O    N    D    O        5
+	.byte $F2, $F4, $F3, $E3, $F4, $5C, $7B	; "MONDO 5"
+	.byte $00
 
 PRG025_CF0A:
 	.byte $2B, $D1, $04, $5A, $FA, $FA, $9A, $2B, $D9, $04, $FF, $7F, $5F, $99, $2B, $E1 ; $CF0A - $CF19
 	.byte $04, $55, $55, $55, $99, $00
 
 PRG025_CF20:
-	.byte $28, $E3, $07, $DE, $F4, $EF, $F1, $E3, $5C, $7C ; $CF1A - $CF29
-	.byte $2A, $51, $08, $EA, $E2, $E4, $5C, $F1, $E0, $F3, $E3, $2A, $20, $0A, $01, $0D ; $CF2A - $CF39
+	.byte $28, $E3
+	.byte $07
+	;       M    O    N    D    O        6
+	.byte $F2, $F4, $F3, $E3, $F4, $5C, $7C	; "MONDO 6"
+
+	.byte $2A, $4F
+	.byte $0C
+	;       G    L    A    C    I    A         L    A    N    D    O
+	.byte $E8, $F1, $E0, $E2, $EA, $E0, $5C, $F1, $E0, $F3, $E3, $F4	; "GLACIA LANDO"
+
+	.byte $2A, $20, $0A, $01, $0D ; $CF2A - $CF39
 	.byte $01, $0D, $01, $0D, $01, $0D, $01, $0D, $00
 
 PRG025_CF43:
@@ -930,9 +1010,17 @@ PRG025_CFB2:
 	.byte $D3, $04, $EE, $7F, $FF, $FF, $2B, $DB, $04, $EE, $FF, $FF, $FF, $00
 
 PRG025_CFC8:
-	.byte $2A, $43 ; $CFBA - $CFC9
-	.byte $07, $DE, $F4, $EF, $F1, $E3, $5C, $7D, $2A, $84, $09, $F5, $EA, $F5, $E4, $5C ; $CFCA - $CFD9
-	.byte $F1, $E0, $F3, $E3, $29, $9A, $04, $CA, $CB, $CC, $CD, $29, $BA, $04, $DA, $DB ; $CFDA - $CFE9
+	.byte $2A, $47
+	.byte $07
+	;       M    O    N    D    O        7
+	.byte $F2, $F4, $F3, $E3, $F4, $5C, $7D	; "MONDO 7"
+
+	.byte $2A, $86
+	.byte $0A
+	;       T    U    B    A         L    A    N    D    O
+	.byte $F9, $FA, $E1, $E0, $5C, $F1, $E0, $F3, $E3, $F4	; "TUBA LANDO"
+
+	.byte $29, $9A, $04, $CA, $CB, $CC, $CD, $29, $BA, $04, $DA, $DB ; $CFDA - $CFE9
 	.byte $DC, $DD, $00
 
 PRG025_CFED:
@@ -952,19 +1040,31 @@ PRG025_D01F:
 	.byte $FF, $FF, $BB, $2B, $D9, $04, $FF, $FF, $FF, $BB, $00
 
 PRG025_D035:
-	.byte $29, $63, $04, $E3, $E0 ; $D02A - $D039
-	.byte $EF, $F0, $29, $A3, $04, $F1, $E0, $F3, $E3, $00
+	.byte $29, $A2
+	.byte $0A
+	;       K    U    P    A    -    L    A    N    D    O
+	.byte $F0, $FA, $F5, $E0, $FE, $F1, $E0, $F3, $E3, $F4	; "KUPA-LANDO"
+
+	.byte $00
 
 PRG025_D044:
-	.byte $29, $7A, $05, $DE, $F4, $EF ; $D03A - $D049
-	.byte $F1, $E3, $29, $9C, $01, $7E, $00
+	.byte $29, $04
+	.byte $05
+	;       M    O    N    D    O
+	.byte $F2, $F4, $F3, $E3, $F4	; "MONDO"
+
+	.byte $29, $46
+	.byte $01
+	.byte $7E	; "8"
+
+	.byte $00
 
 PRG025_D051:
-	.byte $2B, $CA, $04, $6A, $5A, $5A, $5A, $00
+	.byte $2B, $CB, $04, $6A, $5A, $5A, $5A, $00
 
 PRG025_D059:
 	.byte $2B ; $D04A - $D059
-	.byte $D2, $04, $66, $55, $55, $55, $2B, $DA, $04, $66, $55, $55, $55, $00
+	.byte $D3, $04, $66, $55, $55, $55, $2B, $DB, $04, $66, $55, $55, $55, $00
 
 EndSeq_World1Pal:
         vaddr $3F00
