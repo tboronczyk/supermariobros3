@@ -5339,23 +5339,23 @@ PRG024_BAC8:
 	; English: "Thank you. But" / "our Princess is" / "in another" / "castle!...Just" / "kidding! Ha ha" / "ha! Bye bye."
 EndText:
 
-	;       T    h    a    n    k         y    o    u    .         B    u    t
-	.byte $C3, $D7, $D0, $DD, $DA, $FE, $8C, $DE, $CE, $E9, $FE, $B1, $CE, $CD, $FE
+	;       D    a    n    k    o    n    .         S    e    d         n    i    a
+	.byte $B3, $D0, $DD, $DA, $DE, $DD, $E9, $FE, $C2, $D4, $D3, $FE, $DD, $D8, $D0
 
-	;       o    u    r         P    r    i    n    c    e    s    s         i    s    
-	.byte $DE, $CE, $CB, $FE, $BF, $CB, $D8, $DD, $D2, $D4, $CC, $CC, $FE, $D8, $CC
+	;       P    r    i    n    c    i    n    o         e    s    t    a    s
+	.byte $BF, $CB, $D8, $DD, $D2, $D8, $DD, $DE, $FE, $D4, $CC, $CD, $D0, $CC, $FE
 
-	;       i    n         a    n    o    t    h    e    r    
-	.byte $D8, $DD, $FE, $D0, $DD, $DE, $CD, $D7, $D4, $CB, $FE, $FE, $FE, $FE, $FE
+	;       e    n         a    l    i    a         k    a    s    t    e    l   o
+	.byte $D4, $DD, $FE, $D0, $DB, $D8, $D0, $FE, $DA, $D0, $CC, $CD, $D4, $DB, $DE
 
-	;       c    a    s    t    l    e    !    .    .    .    J    u    s    t
-	.byte $D2, $D0, $CC, $CD, $DB, $D4, $EA, $E9, $E9, $E9, $B9, $CE, $CC, $CD, $FE
+	;       .    .    .         M    i        sx    e    r    c    a   s     !
+	.byte $E9, $E9, $E9, $FE, $BC, $D8, $FE, $88, $D4, $CB, $D2, $D0, $CC, $EA, $FE
+	
+	;       H    a         h    a         h    a    !
+	.byte $B7, $D0, $FE, $D7, $D0, $FE, $D7, $D0, $EA, $FE, $FE, $FE, $FE, $FE, $FE
 
-	;       k    i    d    d    i    n    g    !         H    a         h    a    
-	.byte $DA, $D8, $D3, $D3, $D8, $DD, $D6, $EA, $FE, $B7, $D0, $FE, $D7, $D0, $FE
-
-	;       h    a    !         B    y    e         b    y    e    .
-	.byte $D7, $D0, $EA, $FE, $B1, $8C, $D4, $FE, $D1, $8C, $D4, $E9, $FE, $FE, $FE
+	;      Gx    i    s    !
+	.byte $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $FE, $CA, $D8, $CC, $EA, $FE, $FE
 
 PRG024_BB23:
 	; Terminator
