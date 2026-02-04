@@ -424,13 +424,12 @@ PAGE_A000_ByTileset: ; $83E9
 PT2_Anim:	.byte $60, $62, $64, $66
 
 PAUSE_Sprites:
-	.byte $58, $F1, $03, $50	; P
-	.byte $58, $F5, $03, $60	; A
-	.byte $58, $F9, $03, $70	; UX
-	.byte $58, $FD, $03, $80	; Z
-	.byte $58, $FF, $03, $90	; I
-	.byte $58, $DD, $03, $A0	; T
-	.byte $58, $F5, $03, $B0	; A
+	.byte $58, $F1, $03, $60	; P
+	.byte $58, $F5, $03, $70	; A
+	.byte $58, $F9, $03, $80	; U
+	.byte $49, $FB, $03, $80	; X
+	.byte $58, $FD, $03, $90	; Z
+	.byte $58, $FF, $03, $A0	; O
 PAUSE_Sprites_End
 
 	; The BGM per world (see also World_BGM_Restore in PRG010)
